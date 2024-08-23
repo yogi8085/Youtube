@@ -1,0 +1,46 @@
+.play-container {
+    background: #f9f9f9;
+    padding: 20px 2%;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.playvideo {
+    flex: 3;
+}
+
+.recommended {
+    flex: 1.5;
+}
+
+@media (max-width: 900px) {
+    .play-container {
+        flex-direction: column;
+        padding: 20px 5%;
+    }
+
+    .playvideo, .recommended {
+        flex: 1;
+    }
+}
+
+@media (max-width: 600px) {
+    .play-container {
+        padding: 20px 3%;
+    }
+
+    .playvideo, .recommended {
+        flex: 1;
+    }
+}
+
+@media (max-width: 400px) {
+    .play-container {
+        padding: 15px 2%;
+    }
+
+    .playvideo, .recommended {
+        flex: 1;
+    }
+}
